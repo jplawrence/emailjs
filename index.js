@@ -13,7 +13,8 @@ document.getElementById("submit-btn").addEventListener("click", function(e) {
         Subject : `Contact Form Submission: ${nameUser.value}`,
         Body : `${msgForm.value} <br>Emailed from: ${emailUser.value}`
     }).then(
-      alert("Email successfully sent!")
+        document.getElementById("submit-btn").style.background = "#0CCE6B",
+        document.getElementById("submit-btn").style.color = "#000"
     );
     resetForm()
 })
